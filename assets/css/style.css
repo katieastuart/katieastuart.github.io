@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: url("../images/tic-tac-toe.png");
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    margin: 0 auto;
+    padding: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid lightgray;
+    font-style: bold;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.image {
+    float: left;
+    width: 33.3%; 
+    position: relative;
+    left: 50px;  
+    padding-bottom: 25px;
+}
+
+.bio {
+    float: left;
+    width: 66.6%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#logo {
+    float: left;
+    background-color: #4aaaa5;
+    height: 75px;
+    position: relative;
+    top: -25px;
+    font-size: 28px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#about {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#portfolio {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#contact {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #777777;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+#navigation {
+    position: absolute;
+    right:25px;
+}
+
+#aboutMe, #contactMe, #myPortfolio {
+    background-color: #ffffff;
+    height: 700px;
+    margin: 25px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    max-width: 960;
+    position: relative;
+}
+
+#hangman, #RPG, #trivia, #rutgers, #rock {
+    height: 150px;
+    width: 200px;
+    border: 1px solid #dddddd;
+}
+
+#hangman {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+#RPG {
+    position: absolute;
+    left: 275px;
+    top: 150px;
+}
+#trivia {
+    position: absolute;
+    left: 50px;
+    top: 325px;
+}
+#rutgers {
+    position: absolute;
+    left: 275px;
+    top: 325px;
+}
+#rock {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+}
+
+.title {
+    background-color: #4aaaa5;
+    position: absolute;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    top: 125px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    margin-left: 50px;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777
+}
+
+h1 {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+.footer {
+    height: 75px;
+    background-color: #666666;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top: #4aaaa5 10px solid;
+    color: lightgray;
+    padding-top: 50px;
+    font-size: 11px;
+}
+
+
+html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+  }
