@@ -13,23 +13,25 @@
 <body>
     <div class="content">
         <header>
-            <section id="logo">
-                Katie Stuart
-            </section>
+            <div class="navWidth">
+                <section id="logo">
+                    Katie Stuart
+                </section>
 
-            <section id="navigation">
-                <div id="about">
-                    <a href="../index.html">About Me</a>
-                </div>
+                <section id="navigation">
+                    <div id="about">
+                        <a href="../index.html">About Me</a>
+                    </div>
 
-                <div id="portfolio">
-                    <a href="./portfolio.html">Portfolio</a>
-                </div>
+                    <div id="portfolio">
+                        <a href="./portfolio.html">Portfolio</a>
+                    </div>
 
-                <div id="contact">
-                    <a href="./contact.html">Contact</a>
-                </div>
-            </section>
+                    <div id="contact">
+                        <a href="./contact.html">Contact</a>
+                    </div>
+                </section>
+            </div>
         </header>
 
         <div id="clearfix">
@@ -40,12 +42,14 @@
                 <hr>
 
                 <form action="/action_page.php" method="get">
-                    Name <input type="text" name="fname"><br>
-                    Email <input type="text" name="lname"><br>
-                    Message <input type="text" name="lname"><br>
+                    <label>Name</label><input type="text" name="name"><br>
+                    <label>Email</label><input type="text" name="email"><br>
+                    <label>Message</label><br><textarea name="message" rows="10"></textarea><br>
                 </form>
 
-                <button type="button">Submit</button>
+                
+
+                <button type="button" disabled>Submit</button>
 
             </div>
         </div>

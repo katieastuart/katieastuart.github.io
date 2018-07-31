@@ -1,3 +1,4 @@
+/* General Styling */
 * {
     box-sizing: border-box;
   }
@@ -6,10 +7,64 @@ body {
     background-image: url("../images/tic-tac-toe.png");
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#aboutMe, #contactMe {
+    background-color: #ffffff;
+    margin: 25px auto;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    max-width: 960px;
+    position: relative;
+    height: 100%;
+}
+
+#myPortfolio {
+    background-color: #ffffff;
+    margin: 25px auto;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    max-width: 960px;
+    position: relative;
+    height: 700px;
+}
+
+h1 {
+    padding-left: 25px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+hr {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+html, body {
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+
+/* Header menu */
 header {
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     height: 75px;
     margin: 0 auto;
@@ -17,35 +72,6 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-bottom: 2px solid lightgray;
     font-style: bold;
-}
-
-img {
-    height: 200px;
-    width: 200px;
-}
-
-.image {
-    float: left;
-    width: 33.3%; 
-    position: relative;
-    left: 50px;  
-    padding-bottom: 25px;
-}
-
-.bio {
-    float: left;
-    width: 66.6%;
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777;
-}
-
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 #logo {
@@ -101,18 +127,48 @@ a:visited {
 
 #navigation {
     position: absolute;
-    right:25px;
+    right:0;
 }
 
-#aboutMe, #contactMe, #myPortfolio {
-    background-color: #ffffff;
-    height: 700px;
-    margin: 25px;
-    display: block;
-    overflow: hidden;
-    border: 1px solid #dddddd;
-    max-width: 960;
+.navWidth {
+    max-width: 960px;
+    margin: auto;
     position: relative;
+}
+
+/* About Me Page */
+img {
+    height: 250px;
+    width: 250px;
+}
+
+.image {
+    float: left;
+    width: 33.3%; 
+    position: relative;
+    left: 25px;  
+    margin-bottom: 25px;
+}
+
+.bio {
+    float: left;
+    width: 66.6%;
+    word-wrap: break-word;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Portfolio Page */
+.imgPortfolio {
+    height: 150px;
+    width: 200px;
 }
 
 #hangman, #RPG, #trivia, #rutgers, #rock {
@@ -122,41 +178,41 @@ a:visited {
 }
 
 #hangman {
-    position: absolute;
-    left: 50px;
-    top: 150px;
+    position: relative;
+    left: 25px;
 }
 #RPG {
-    position: absolute;
-    left: 275px;
-    top: 150px;
+    position: relative;
+    left: 250px;
+    top: -150px;
 }
 #trivia {
-    position: absolute;
-    left: 50px;
-    top: 325px;
+    position: relative;
+    left: 25px;
+    top: -115px;
 }
 #rutgers {
-    position: absolute;
-    left: 275px;
-    top: 325px;
+    position: relative;
+    left: 250px;
+    top: -265px;
 }
 #rock {
-    position: absolute;
-    top: 500px;
-    left: 50px;
+    position: relative;
+    left: 25px;
+    top: -230px;
 }
 
-.title {
+#title {
     background-color: #4aaaa5;
     position: absolute;
     width: 200px;
     color: #ffffff;
     text-align: center;
     padding: 10px;
-    top: 125px;
+    top: 105px;
 }
 
+/* Contact Page */
 input[type=text] {
     width: 100%;
     margin: 5px;
@@ -168,36 +224,33 @@ button {
     background-color: #4aaaa5;
     border: none;
     color: white;
-    margin-left: 50px;
+    margin-left: 25px;
     font-size: 14px;
     padding: 10px;
     margin-top: 15px;
+    margin-bottom: 25px;
     cursor: pointer;
 }
 
 form {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 25px;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777
 }
 
-h1 {
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-    font-size: 36px;
-    font-weight: bold;
+textarea {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 35px;
+    margin-top: 5px;
 }
 
-hr {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 25px;
+label {
+    padding-left: 5px;
 }
 
+/* Footer */
 .footer {
     height: 75px;
     background-color: #666666;
@@ -207,19 +260,5 @@ hr {
     color: lightgray;
     padding-top: 50px;
     font-size: 11px;
-}
-
-
-html, body {
-    height: 100%;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  .content {
-    flex: 1 0 auto;
-  }
-  .footer {
     flex-shrink: 0;
-  }
+}
